@@ -75,14 +75,15 @@
         //        NSData *returnedData = [NSURLConnection sendSynchronousRequest:self.request
         //                                                     returningResponse:nil
         //                                                                 error:&error];
-        // Get the string from the server data
+        
+        // NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
     }
     
     // We are here with some string data which should look like a json. We are gonna use some method to create a dictionary or an array from that
     NSError *jsonError = nil;
     // You need to add <Foundation/Foundation.h>
     id object = [NSJSONSerialization JSONObjectWithData:jsonData
-                                                options:0
+                                                options:NSJSONReadingAllowFragments
                                                   error:&jsonError];
     
     if (jsonError)

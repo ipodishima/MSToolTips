@@ -32,7 +32,7 @@
     // Build the url (please the online documentation for YouTube APIs
     NSString *getPath = [YOUTUBE_BASE_URL stringByAppendingPathComponent:@"feeds/api/videos"];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?%@", getPath, parameters]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@?%@", getPath, parameters]];
     NSLog(@"load request with URL: %@", url);
     // Build the request
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
@@ -51,8 +51,10 @@
 
 - (void) downloadOperation:(DownloadOperation *)operation didLoadObject:(id)object
 {
-    if ([object isKindOfClass:[NSDictionary class]]) {
-        // There is something wrong, create an error and abord
+    //NSLog(@"%@", [object class]);
+    if (![object isKindOfClass:[NSDictionary class]]) {
+        // There is something wrong, create an error and abort
+        [self.delegate youTubeManager:self didFailWithError:nil];
         return;
     }
     else
@@ -73,7 +75,7 @@
             NSMutableArray *finalArray = [[NSMutableArray alloc] init];
             
             // We parse the dictionary to create objects. This is an important steps, do not hesitate to NSLog(@"%@", jsonDic) to see what is happening
-            NSLog(@"%@", jsonDic);
+            // NSLog(@"%@", jsonDic);
             
             for (NSDictionary *dic in videos)
             {

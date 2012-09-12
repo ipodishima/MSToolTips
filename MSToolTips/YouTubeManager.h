@@ -10,7 +10,7 @@
 #import "DownloadDelegate.h"
 
 // Some definitions
-#define YOUTUBE_BASE_URL @"http://gdata.youtube.com"
+#define YOUTUBE_BASE_URL @"gdata.youtube.com"
 #define YOUTUBE_PAGING_SIZE 16
 
 @class YouTubeManager; // Ask yourself why is this line present?
