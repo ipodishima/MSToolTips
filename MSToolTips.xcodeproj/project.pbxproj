@@ -13,6 +13,8 @@
 		E0438F7E16007D86009B2BA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0438F7C16007D86009B2BA6 /* InfoPlist.strings */; };
 		E0438F8016007D86009B2BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F7F16007D86009B2BA6 /* main.m */; };
 		E0438F8416007D86009B2BA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F8316007D86009B2BA6 /* AppDelegate.m */; };
+		E0438F9216007E8D009B2BA6 /* YouTubeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F9116007E8D009B2BA6 /* YouTubeManager.m */; };
+		E0438F9616007EA3009B2BA6 /* YouTubeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F9516007EA3009B2BA6 /* YouTubeVideo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E0438F8116007D86009B2BA6 /* MSToolTips-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSToolTips-Prefix.pch"; sourceTree = "<group>"; };
 		E0438F8216007D86009B2BA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0438F8316007D86009B2BA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0438F9016007E8D009B2BA6 /* YouTubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeManager.h; sourceTree = "<group>"; };
+		E0438F9116007E8D009B2BA6 /* YouTubeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeManager.m; sourceTree = "<group>"; };
+		E0438F9416007EA3009B2BA6 /* YouTubeVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeVideo.h; sourceTree = "<group>"; };
+		E0438F9516007EA3009B2BA6 /* YouTubeVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeVideo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		E0438F7916007D86009B2BA6 /* MSToolTips */ = {
 			isa = PBXGroup;
 			children = (
+				E0438F8E16007E5C009B2BA6 /* YouTube */,
 				E0438F8216007D86009B2BA6 /* AppDelegate.h */,
 				E0438F8316007D86009B2BA6 /* AppDelegate.m */,
 				E0438F7A16007D86009B2BA6 /* Supporting Files */,
@@ -88,6 +95,25 @@
 				E0438F8116007D86009B2BA6 /* MSToolTips-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0438F8E16007E5C009B2BA6 /* YouTube */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F8F16007E6E009B2BA6 /* Model */,
+			);
+			name = YouTube;
+			sourceTree = "<group>";
+		};
+		E0438F8F16007E6E009B2BA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F9016007E8D009B2BA6 /* YouTubeManager.h */,
+				E0438F9116007E8D009B2BA6 /* YouTubeManager.m */,
+				E0438F9416007EA3009B2BA6 /* YouTubeVideo.h */,
+				E0438F9516007EA3009B2BA6 /* YouTubeVideo.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +180,8 @@
 			files = (
 				E0438F8016007D86009B2BA6 /* main.m in Sources */,
 				E0438F8416007D86009B2BA6 /* AppDelegate.m in Sources */,
+				E0438F9216007E8D009B2BA6 /* YouTubeManager.m in Sources */,
+				E0438F9616007EA3009B2BA6 /* YouTubeVideo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
