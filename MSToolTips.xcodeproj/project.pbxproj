@@ -21,6 +21,7 @@
 		E0438FBE160090D6009B2BA6 /* YouTubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0438FBC160090D6009B2BA6 /* YouTubeViewController.xib */; };
 		E0438FC3160092B0009B2BA6 /* LocalFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438FC1160092B0009B2BA6 /* LocalFileViewController.m */; };
 		E0438FC4160092B0009B2BA6 /* LocalFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0438FC2160092B0009B2BA6 /* LocalFileViewController.xib */; };
+		E0438FC816009C17009B2BA6 /* File.json in Resources */ = {isa = PBXBuildFile; fileRef = E0438FC716009C17009B2BA6 /* File.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		E0438FC0160092B0009B2BA6 /* LocalFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileViewController.h; sourceTree = "<group>"; };
 		E0438FC1160092B0009B2BA6 /* LocalFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileViewController.m; sourceTree = "<group>"; };
 		E0438FC2160092B0009B2BA6 /* LocalFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalFileViewController.xib; sourceTree = "<group>"; };
+		E0438FC716009C17009B2BA6 /* File.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = File.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				E0438FC0160092B0009B2BA6 /* LocalFileViewController.h */,
 				E0438FC1160092B0009B2BA6 /* LocalFileViewController.m */,
 				E0438FC2160092B0009B2BA6 /* LocalFileViewController.xib */,
+				E0438FC716009C17009B2BA6 /* File.json */,
 			);
 			name = "Local data";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				E0438F7E16007D86009B2BA6 /* InfoPlist.strings in Resources */,
 				E0438FBE160090D6009B2BA6 /* YouTubeViewController.xib in Resources */,
 				E0438FC4160092B0009B2BA6 /* LocalFileViewController.xib in Resources */,
+				E0438FC816009C17009B2BA6 /* File.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

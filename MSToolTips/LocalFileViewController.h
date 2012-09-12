@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownloadManager.h"
 
-@interface LocalFileViewController : UIViewController
+@interface LocalFileViewController : UIViewController <DownloadDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end

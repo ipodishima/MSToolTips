@@ -33,6 +33,13 @@
     [_operationQueue addOperation:op];
 }
 
+- (void) loadLocalFileName:(NSString*)filename withDelegate:(id<DownloadDelegate>)delegate
+{
+    DownloadOperation *op = [[DownloadOperation alloc] initWithLocalFileName:filename
+                                                                 andDelegate:delegate];
+    [_operationQueue addOperation:op];
+}
+
 // This is one singleton implementation which use Grand Central Dispatch also know as GCD
 #pragma mark - Singleton methods
 + (DownloadManager*)shared

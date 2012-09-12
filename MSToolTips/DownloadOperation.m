@@ -52,7 +52,7 @@
     if (_localFileName)
     {
         // First, get the file path. NSBundle mainBundle is in fact the path for the compiled resource
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:_localFileName ofType:@".json"];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:_localFileName ofType:@"json"];
         // Then get the data associated
         jsonData = [NSData dataWithContentsOfFile:filePath];
     }
