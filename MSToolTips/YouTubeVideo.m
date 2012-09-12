@@ -9,5 +9,13 @@
 #import "YouTubeVideo.h"
 
 @implementation YouTubeVideo
+@synthesize
+url =_url,
+title = _title,
+caption = _caption,
+thumbnail = _thumbnail,
+uploadedDate = _uploadedDate,
+nbViews = _nbViews,
+rating = _rating;
 
 @end
