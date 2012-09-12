@@ -12,7 +12,10 @@
 @class DownloadOperation;
 
 @protocol DownloadDelegate <NSObject>
+// Will be fired when the download start to occurs
 - (void) downloadOperation:(DownloadOperation *)operation didStartLoadingRequest:(NSMutableURLRequest*)request;
+// Will be fired if there is any issue
 - (void) downloadOperation:(DownloadOperation *)operation didFailWithError:(NSError*)error;
-- (void) downloadOperation:(DownloadOperation *)operation didLoadDictionnary:(NSDictionnary*)dic;
+// Will be fired at the end and return the object loaded (we assume that we are working with JSON files). The object can either be an NSArray or an NSDictionary
+- (void) downloadOperation:(DownloadOperation *)operation didLoadObject:(id)object;
 @end

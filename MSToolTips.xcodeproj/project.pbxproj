@@ -38,6 +38,7 @@
 		E0438F9816007F98009B2BA6 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		E0438F9A16007FA7009B2BA6 /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
 		E0438F9B16007FA7009B2BA6 /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
+		E0438FB816008021009B2BA6 /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +131,7 @@
 				E0438F9816007F98009B2BA6 /* DownloadManager.m */,
 				E0438F9A16007FA7009B2BA6 /* DownloadOperation.h */,
 				E0438F9B16007FA7009B2BA6 /* DownloadOperation.m */,
+				E0438FB816008021009B2BA6 /* DownloadDelegate.h */,
 			);
 			name = "Download is easy";
 			sourceTree = "<group>";
