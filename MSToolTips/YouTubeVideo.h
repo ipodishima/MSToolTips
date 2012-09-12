@@ -23,4 +23,7 @@
 @property (nonatomic, assign) NSInteger nbViews;
 // The rating (from 0 to 5)
 @property (nonatomic, assign) float rating;
+// The youtube ID
+@property (nonatomic, strong) NSString *youtubeID;
+
 @end

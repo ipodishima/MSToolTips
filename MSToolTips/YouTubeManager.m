@@ -83,6 +83,7 @@
                 y.url = [[dic objectForKey:@"content"] objectForKey:@"src"];
                 y.title = [[dic objectForKey:@"title"] objectForKey:@"$t"];
                 y.caption = [[[dic objectForKey:@"media$group"] objectForKey:@"media$description"] objectForKey:@"$t"];
+                y.youtubeID = [[[dic objectForKey:@"media$group"] objectForKey:@"yt$videoid"] objectForKey:@"$t"];
                 y.rating = [[[dic objectForKey:@"gd$rating"] objectForKey:@"average"] floatValue];
                 y.nbViews = [[[dic objectForKey:@"yt$statistics"] objectForKey:@"viewCount"] integerValue];
                 NSArray *thumbs = [[dic objectForKey:@"media$group"] objectForKey:@"media$thumbnail"];

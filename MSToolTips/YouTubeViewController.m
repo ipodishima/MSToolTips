@@ -9,6 +9,7 @@
 #import "YouTubeViewController.h"
 #import "YouTubeVideo.h"
 
+
 @interface YouTubeViewController ()
 
 @end
@@ -39,6 +40,27 @@
     [[YouTubeManager shared] loadDataFromOffset:1];
 }
 
+- (IBAction)seeVideo:(id)sender
+{
+    // This is one way to integrate Youtube video in your app.
+    // The other is kind of a hack around UIWebView (does not work on simulator though)
+    LBYouTubePlayerViewController *c = [[LBYouTubePlayerViewController alloc] initWithYouTubeID:_currentVideoDisplayed.youtubeID];
+    c.quality = LBYouTubePlayerQualityLarge;
+    c.view.frame = CGRectMake(60.0f, 60.0f, 200.0f, 200.0f);
+    c.delegate = self;
+    [self.view addSubview:c.view];
+}
+
+#pragma mark - LBYouTubePlayerViewControllerDelegate
+
+-(void)youTubePlayerViewController:(LBYouTubePlayerViewController *)controller didSuccessfullyExtractYouTubeURL:(NSURL *)videoURL {
+    NSLog(@"Did extract video source:%@", videoURL);
+}
+
+-(void)youTubePlayerViewController:(LBYouTubePlayerViewController *)controller failedExtractingYouTubeURLWithError:(NSError *)error {
+    NSLog(@"Failed loading video due to error:%@", error);
+}
+
 #pragma mark - YouTubeManager delegate
 
 - (void) youTubeManagerDidStartToLoad:(YouTubeManager *)manager
@@ -67,6 +89,8 @@
     _ratingLabel.text = [NSString stringWithFormat:@"%f", firstVideo.rating];
     _captionTextView.text = firstVideo.caption;
     [_activityIndicator stopAnimating];
+    
+    _currentVideoDisplayed = firstVideo;
 }
 
 

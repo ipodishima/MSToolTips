@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "YouTubeManager.h"
+#import "LBYouTubePlayerViewController.h"
 
-@interface YouTubeViewController : UIViewController <YouTubeManagerDelegate>
+@class YouTubeVideo;
 
+@interface YouTubeViewController : UIViewController <YouTubeManagerDelegate, LBYouTubePlayerControllerDelegate>
+{
+    YouTubeVideo *_currentVideoDisplayed;
+}
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberOfViewsLabel;

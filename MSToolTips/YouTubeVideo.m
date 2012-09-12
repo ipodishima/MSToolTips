@@ -16,6 +16,7 @@ caption = _caption,
 thumbnail = _thumbnail,
 uploadedDate = _uploadedDate,
 nbViews = _nbViews,
-rating = _rating;
+rating = _rating,
+youtubeID = _youtubeID;
 
 @end
