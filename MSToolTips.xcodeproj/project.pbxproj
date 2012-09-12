@@ -15,6 +15,8 @@
 		E0438F8416007D86009B2BA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F8316007D86009B2BA6 /* AppDelegate.m */; };
 		E0438F9216007E8D009B2BA6 /* YouTubeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F9116007E8D009B2BA6 /* YouTubeManager.m */; };
 		E0438F9616007EA3009B2BA6 /* YouTubeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F9516007EA3009B2BA6 /* YouTubeVideo.m */; };
+		E0438F9916007F98009B2BA6 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F9816007F98009B2BA6 /* DownloadManager.m */; };
+		E0438F9C16007FA7009B2BA6 /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F9B16007FA7009B2BA6 /* DownloadOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		E0438F9116007E8D009B2BA6 /* YouTubeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeManager.m; sourceTree = "<group>"; };
 		E0438F9416007EA3009B2BA6 /* YouTubeVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeVideo.h; sourceTree = "<group>"; };
 		E0438F9516007EA3009B2BA6 /* YouTubeVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeVideo.m; sourceTree = "<group>"; };
+		E0438F9716007F98009B2BA6 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		E0438F9816007F98009B2BA6 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		E0438F9A16007FA7009B2BA6 /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		E0438F9B16007FA7009B2BA6 /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		E0438F7916007D86009B2BA6 /* MSToolTips */ = {
 			isa = PBXGroup;
 			children = (
+				E0438F9D16007FAF009B2BA6 /* Download is easy */,
 				E0438F8E16007E5C009B2BA6 /* YouTube */,
 				E0438F8216007D86009B2BA6 /* AppDelegate.h */,
 				E0438F8316007D86009B2BA6 /* AppDelegate.m */,
@@ -114,6 +121,17 @@
 				E0438F9516007EA3009B2BA6 /* YouTubeVideo.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E0438F9D16007FAF009B2BA6 /* Download is easy */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F9716007F98009B2BA6 /* DownloadManager.h */,
+				E0438F9816007F98009B2BA6 /* DownloadManager.m */,
+				E0438F9A16007FA7009B2BA6 /* DownloadOperation.h */,
+				E0438F9B16007FA7009B2BA6 /* DownloadOperation.m */,
+			);
+			name = "Download is easy";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +200,8 @@
 				E0438F8416007D86009B2BA6 /* AppDelegate.m in Sources */,
 				E0438F9216007E8D009B2BA6 /* YouTubeManager.m in Sources */,
 				E0438F9616007EA3009B2BA6 /* YouTubeVideo.m in Sources */,
+				E0438F9916007F98009B2BA6 /* DownloadManager.m in Sources */,
+				E0438F9C16007FA7009B2BA6 /* DownloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
