@@ -1,0 +1,3 @@
+[submodule "vendor/LBYoutubeView"]
+	path = vendor/LBYoutubeView
+	url = https://github.com/larcus94/LBYouTubeView
