@@ -7,14 +7,34 @@
 //
 
 #import "AppDelegate.h"
+#import "YouTubeViewController.h"
+#import "LocalFileViewController.h"
 
 @implementation AppDelegate
+@synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    
+    YouTubeViewController *youtubeVC = [[YouTubeViewController alloc] initWithNibName:@"YouTubeViewController" bundle:nil];
+    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Youtube"
+                                                             image:nil
+                                                               tag:0];
+    youtubeVC.tabBarItem = tabBarItem1;
+    
+    LocalFileViewController *localVC = [[LocalFileViewController alloc] initWithNibName:@"LocalFileViewController" bundle:nil];
+    UITabBarItem *tabBarItem2 = [[UITabBarItem alloc] initWithTitle:@"Local"
+                                                              image:nil
+                                                                tag:1];
+    localVC.tabBarItem = tabBarItem2;
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:youtubeVC, localVC, nil]];
+    [self.window setRootViewController:self.tabBarController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
