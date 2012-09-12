@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0438F7416007D86009B2BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0438F7316007D86009B2BA6 /* UIKit.framework */; };
+		E0438F7616007D86009B2BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0438F7516007D86009B2BA6 /* Foundation.framework */; };
+		E0438F7816007D86009B2BA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0438F7716007D86009B2BA6 /* CoreGraphics.framework */; };
+		E0438F7E16007D86009B2BA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0438F7C16007D86009B2BA6 /* InfoPlist.strings */; };
+		E0438F8016007D86009B2BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F7F16007D86009B2BA6 /* main.m */; };
+		E0438F8416007D86009B2BA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438F8316007D86009B2BA6 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0438F6F16007D86009B2BA6 /* MSToolTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSToolTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0438F7316007D86009B2BA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0438F7516007D86009B2BA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0438F7716007D86009B2BA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0438F7B16007D86009B2BA6 /* MSToolTips-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MSToolTips-Info.plist"; sourceTree = "<group>"; };
+		E0438F7D16007D86009B2BA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0438F7F16007D86009B2BA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0438F8116007D86009B2BA6 /* MSToolTips-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSToolTips-Prefix.pch"; sourceTree = "<group>"; };
+		E0438F8216007D86009B2BA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0438F8316007D86009B2BA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0438F6C16007D86009B2BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0438F7416007D86009B2BA6 /* UIKit.framework in Frameworks */,
+				E0438F7616007D86009B2BA6 /* Foundation.framework in Frameworks */,
+				E0438F7816007D86009B2BA6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0438F6416007D86009B2BA6 = {
+			isa = PBXGroup;
+			children = (
+				E0438F7916007D86009B2BA6 /* MSToolTips */,
+				E0438F7216007D86009B2BA6 /* Frameworks */,
+				E0438F7016007D86009B2BA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0438F7016007D86009B2BA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F6F16007D86009B2BA6 /* MSToolTips.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0438F7216007D86009B2BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F7316007D86009B2BA6 /* UIKit.framework */,
+				E0438F7516007D86009B2BA6 /* Foundation.framework */,
+				E0438F7716007D86009B2BA6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0438F7916007D86009B2BA6 /* MSToolTips */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F8216007D86009B2BA6 /* AppDelegate.h */,
+				E0438F8316007D86009B2BA6 /* AppDelegate.m */,
+				E0438F7A16007D86009B2BA6 /* Supporting Files */,
+			);
+			path = MSToolTips;
+			sourceTree = "<group>";
+		};
+		E0438F7A16007D86009B2BA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F7B16007D86009B2BA6 /* MSToolTips-Info.plist */,
+				E0438F7C16007D86009B2BA6 /* InfoPlist.strings */,
+				E0438F7F16007D86009B2BA6 /* main.m */,
+				E0438F8116007D86009B2BA6 /* MSToolTips-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0438F6E16007D86009B2BA6 /* MSToolTips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0438F8716007D86009B2BA6 /* Build configuration list for PBXNativeTarget "MSToolTips" */;
+			buildPhases = (
+				E0438F6B16007D86009B2BA6 /* Sources */,
+				E0438F6C16007D86009B2BA6 /* Frameworks */,
+				E0438F6D16007D86009B2BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSToolTips;
+			productName = MSToolTips;
+			productReference = E0438F6F16007D86009B2BA6 /* MSToolTips.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0438F6616007D86009B2BA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Marian Paul";
+			};
+			buildConfigurationList = E0438F6916007D86009B2BA6 /* Build configuration list for PBXProject "MSToolTips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0438F6416007D86009B2BA6;
+			productRefGroup = E0438F7016007D86009B2BA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0438F6E16007D86009B2BA6 /* MSToolTips */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0438F6D16007D86009B2BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0438F7E16007D86009B2BA6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0438F6B16007D86009B2BA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0438F8016007D86009B2BA6 /* main.m in Sources */,
+				E0438F8416007D86009B2BA6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0438F7C16007D86009B2BA6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0438F7D16007D86009B2BA6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0438F8516007D86009B2BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0438F8616007D86009B2BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0438F8816007D86009B2BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSToolTips/MSToolTips-Prefix.pch";
+				INFOPLIST_FILE = "MSToolTips/MSToolTips-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0438F8916007D86009B2BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSToolTips/MSToolTips-Prefix.pch";
+				INFOPLIST_FILE = "MSToolTips/MSToolTips-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0438F6916007D86009B2BA6 /* Build configuration list for PBXProject "MSToolTips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0438F8516007D86009B2BA6 /* Debug */,
+				E0438F8616007D86009B2BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0438F8716007D86009B2BA6 /* Build configuration list for PBXNativeTarget "MSToolTips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0438F8816007D86009B2BA6 /* Debug */,
+				E0438F8916007D86009B2BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0438F6616007D86009B2BA6 /* Project object */;
+}
