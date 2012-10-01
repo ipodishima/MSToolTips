@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iCarousel.h"
 
-@interface WineViewController : UIViewController
-
+@interface WineViewController : UIViewController <iCarouselDataSource, iCarouselDelegate>
+{
+    iCarousel *_carousel;
+    UITextView *_textView;
+}
 @end

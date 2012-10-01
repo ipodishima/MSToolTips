@@ -29,6 +29,10 @@
 		E0438FDA16009FBB009B2BA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E0438FD716009FBB009B2BA6 /* README.md */; };
 		E0438FDC16009FE8009B2BA6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */; };
 		E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */; };
+		E0BA0D70161A4DFA00CA32D5 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA0D6F161A4DFA00CA32D5 /* iCarousel.m */; };
+		E0BA0D72161A4E0800CA32D5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BA0D71161A4E0800CA32D5 /* QuartzCore.framework */; };
+		E0BA0D75161A4F7B00CA32D5 /* bouteille.png in Resources */ = {isa = PBXBuildFile; fileRef = E0BA0D73161A4F7B00CA32D5 /* bouteille.png */; };
+		E0BA0D76161A4F7B00CA32D5 /* bouteille@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0BA0D74161A4F7B00CA32D5 /* bouteille@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,11 @@
 		E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		E0BA0D66161A4ACF00CA32D5 /* WineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineViewController.h; sourceTree = "<group>"; };
 		E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineViewController.m; sourceTree = "<group>"; };
+		E0BA0D6E161A4DFA00CA32D5 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		E0BA0D6F161A4DFA00CA32D5 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		E0BA0D71161A4E0800CA32D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E0BA0D73161A4F7B00CA32D5 /* bouteille.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bouteille.png; sourceTree = "<group>"; };
+		E0BA0D74161A4F7B00CA32D5 /* bouteille@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bouteille@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BA0D72161A4E0800CA32D5 /* QuartzCore.framework in Frameworks */,
 				E0438FDC16009FE8009B2BA6 /* MediaPlayer.framework in Frameworks */,
 				E0438F7416007D86009B2BA6 /* UIKit.framework in Frameworks */,
 				E0438F7616007D86009B2BA6 /* Foundation.framework in Frameworks */,
@@ -106,6 +116,7 @@
 		E0438F7216007D86009B2BA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0BA0D71161A4E0800CA32D5 /* QuartzCore.framework */,
 				E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */,
 				E0438F7316007D86009B2BA6 /* UIKit.framework */,
 				E0438F7516007D86009B2BA6 /* Foundation.framework */,
@@ -196,6 +207,7 @@
 		E0438FC916009E1E009B2BA6 /* Third party */ = {
 			isa = PBXGroup;
 			children = (
+				E0BA0D6D161A4DFA00CA32D5 /* iCarousel */,
 				E0438FD316009FBB009B2BA6 /* JSONKit */,
 				E0438FCA16009EBF009B2BA6 /* LBYoutube */,
 			);
@@ -237,11 +249,23 @@
 		E0BA0D64161A4AA300CA32D5 /* Wine views */ = {
 			isa = PBXGroup;
 			children = (
+				E0BA0D73161A4F7B00CA32D5 /* bouteille.png */,
+				E0BA0D74161A4F7B00CA32D5 /* bouteille@2x.png */,
 				E0BA0D66161A4ACF00CA32D5 /* WineViewController.h */,
 				E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */,
 			);
 			name = "Wine views";
 			sourceTree = "<group>";
+		};
+		E0BA0D6D161A4DFA00CA32D5 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				E0BA0D6E161A4DFA00CA32D5 /* iCarousel.h */,
+				E0BA0D6F161A4DFA00CA32D5 /* iCarousel.m */,
+			);
+			name = iCarousel;
+			path = vendor/iCarousel/iCarousel;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -300,6 +324,8 @@
 				E0438FC816009C17009B2BA6 /* File.json in Resources */,
 				E0438FD816009FBB009B2BA6 /* CHANGELOG.md in Resources */,
 				E0438FDA16009FBB009B2BA6 /* README.md in Resources */,
+				E0BA0D75161A4F7B00CA32D5 /* bouteille.png in Resources */,
+				E0BA0D76161A4F7B00CA32D5 /* bouteille@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +348,7 @@
 				E0438FD116009F3B009B2BA6 /* LBYouTubePlayerViewController.m in Sources */,
 				E0438FD916009FBB009B2BA6 /* JSONKit.m in Sources */,
 				E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */,
+				E0BA0D70161A4DFA00CA32D5 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

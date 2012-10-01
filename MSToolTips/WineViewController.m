@@ -33,8 +33,25 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+    
+    _carousel = [[iCarousel alloc] initWithFrame:CGRectMake(0, 300.0, CGRectGetWidth(self.view.bounds), 111.0 /*depends strongly of values in overlay*/)];
+    // these values in initWithFrame should be fixed, having hardcoded values is not great!
+   
+    _carousel.type = iCarouselTypeRotary; // Try other values to see what happens
+    _carousel.delegate = self;
+    _carousel.dataSource = self;
+    _carousel.clipsToBounds = NO;
+    _carousel.userInteractionEnabled = YES;
+    [self.view addSubview:_carousel];
+    
     _overlay = [[WineOverlayView alloc] initWithFrame:self.view.bounds];
+    _overlay.userInteractionEnabled = NO;
     [self.view addSubview:_overlay];
+    
+    _textView = [[UITextView alloc] initWithFrame:CGRectMake(10.0, 10.0, 300.0, 280.0)];
+    _textView.textColor = [UIColor blackColor];
+    _textView.font = [UIFont boldSystemFontOfSize:15.0];
+    [self.view addSubview:_textView];
 }
 
 - (void)viewDidUnload
@@ -46,6 +63,36 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - iCarousel methods
+
+- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
+{
+    return 40 /*This is where you will set count values from server response*/;
+}
+
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
+{
+    //create new view if no view is available for recycling
+    if (view == nil)
+    {
+        view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bouteille.png"]];
+    }
+    
+    // Use for example SDWebImageView to load the image from internet in an asynchronous way
+    
+    return view;
+}
+
+- (CGFloat)carouselItemWidth:(iCarousel *)carousel
+{
+    return 90.0; /*image width*/
+}
+
+- (void)carouselCurrentItemIndexDidChange:(iCarousel *)carousel;
+{
+    _textView.text = [NSString stringWithFormat:@"This is where you should place the text from the bottle. Current index is %d", carousel.currentItemIndex];
 }
 
 @end
