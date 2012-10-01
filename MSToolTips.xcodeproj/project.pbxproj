@@ -28,6 +28,7 @@
 		E0438FD916009FBB009B2BA6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438FD616009FBB009B2BA6 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E0438FDA16009FBB009B2BA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E0438FD716009FBB009B2BA6 /* README.md */; };
 		E0438FDC16009FE8009B2BA6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */; };
+		E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		E0438FD616009FBB009B2BA6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		E0438FD716009FBB009B2BA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E0BA0D66161A4ACF00CA32D5 /* WineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineViewController.h; sourceTree = "<group>"; };
+		E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 				E0438FBF16009245009B2BA6 /* Local data */,
 				E0438F9D16007FAF009B2BA6 /* Download is easy */,
 				E0438F8E16007E5C009B2BA6 /* YouTube */,
+				E0BA0D64161A4AA300CA32D5 /* Wine views */,
 				E0438F8216007D86009B2BA6 /* AppDelegate.h */,
 				E0438F8316007D86009B2BA6 /* AppDelegate.m */,
 				E0438F7A16007D86009B2BA6 /* Supporting Files */,
@@ -230,6 +234,15 @@
 			path = vendor/LBYoutubeView/Submodules/JSONKit;
 			sourceTree = SOURCE_ROOT;
 		};
+		E0BA0D64161A4AA300CA32D5 /* Wine views */ = {
+			isa = PBXGroup;
+			children = (
+				E0BA0D66161A4ACF00CA32D5 /* WineViewController.h */,
+				E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */,
+			);
+			name = "Wine views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +321,7 @@
 				E0438FD016009F3B009B2BA6 /* LBYouTubePlayerController.m in Sources */,
 				E0438FD116009F3B009B2BA6 /* LBYouTubePlayerViewController.m in Sources */,
 				E0438FD916009FBB009B2BA6 /* JSONKit.m in Sources */,
+				E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +429,7 @@
 				E0438F8916007D86009B2BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

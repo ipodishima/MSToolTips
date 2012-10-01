@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "YouTubeViewController.h"
 #import "LocalFileViewController.h"
+#import "WineViewController.h"
 
 @implementation AppDelegate
 @synthesize window = _window;
@@ -33,6 +34,14 @@
                                                                 tag:1];
     localVC.tabBarItem = tabBarItem2;
     [self.tabBarController setViewControllers:[NSArray arrayWithObjects:youtubeVC, localVC, nil]];
+    [self.window setRootViewController:self.tabBarController];
+    
+    WineViewController *wineVC = [[WineViewController alloc] init];
+    UITabBarItem *tabBarItem3 = [[UITabBarItem alloc] initWithTitle:@"Wine"
+                                                              image:nil
+                                                                tag:2];
+    wineVC.tabBarItem = tabBarItem3;
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:youtubeVC, localVC, wineVC, nil]];
     [self.window setRootViewController:self.tabBarController];
     
     [self.window makeKeyAndVisible];
