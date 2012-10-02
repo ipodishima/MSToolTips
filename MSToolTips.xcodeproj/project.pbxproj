@@ -28,6 +28,8 @@
 		E0438FD916009FBB009B2BA6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438FD616009FBB009B2BA6 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E0438FDA16009FBB009B2BA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E0438FD716009FBB009B2BA6 /* README.md */; };
 		E0438FDC16009FE8009B2BA6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */; };
+		E0AB10F3161B126700FCC53C /* PerformancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB10F2161B126700FCC53C /* PerformancesViewController.m */; };
+		E0AB10F7161B128900FCC53C /* PerformanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB10F6161B128900FCC53C /* PerformanceCell.m */; };
 		E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */; };
 		E0BA0D70161A4DFA00CA32D5 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA0D6F161A4DFA00CA32D5 /* iCarousel.m */; };
 		E0BA0D72161A4E0800CA32D5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BA0D71161A4E0800CA32D5 /* QuartzCore.framework */; };
@@ -71,6 +73,10 @@
 		E0438FD616009FBB009B2BA6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		E0438FD716009FBB009B2BA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E0AB10F1161B126700FCC53C /* PerformancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformancesViewController.h; sourceTree = "<group>"; };
+		E0AB10F2161B126700FCC53C /* PerformancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformancesViewController.m; sourceTree = "<group>"; };
+		E0AB10F5161B128900FCC53C /* PerformanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceCell.h; sourceTree = "<group>"; };
+		E0AB10F6161B128900FCC53C /* PerformanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceCell.m; sourceTree = "<group>"; };
 		E0BA0D66161A4ACF00CA32D5 /* WineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineViewController.h; sourceTree = "<group>"; };
 		E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineViewController.m; sourceTree = "<group>"; };
 		E0BA0D6E161A4DFA00CA32D5 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		E0438F7916007D86009B2BA6 /* MSToolTips */ = {
 			isa = PBXGroup;
 			children = (
+				E0AB10EF161B124A00FCC53C /* Debug */,
 				E0438FC916009E1E009B2BA6 /* Third party */,
 				E0438FBF16009245009B2BA6 /* Local data */,
 				E0438F9D16007FAF009B2BA6 /* Download is easy */,
@@ -246,6 +253,25 @@
 			path = vendor/LBYoutubeView/Submodules/JSONKit;
 			sourceTree = SOURCE_ROOT;
 		};
+		E0AB10EF161B124A00FCC53C /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				E0AB10F4161B126E00FCC53C /* Performances */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		E0AB10F4161B126E00FCC53C /* Performances */ = {
+			isa = PBXGroup;
+			children = (
+				E0AB10F1161B126700FCC53C /* PerformancesViewController.h */,
+				E0AB10F2161B126700FCC53C /* PerformancesViewController.m */,
+				E0AB10F5161B128900FCC53C /* PerformanceCell.h */,
+				E0AB10F6161B128900FCC53C /* PerformanceCell.m */,
+			);
+			name = Performances;
+			sourceTree = "<group>";
+		};
 		E0BA0D64161A4AA300CA32D5 /* Wine views */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +375,8 @@
 				E0438FD916009FBB009B2BA6 /* JSONKit.m in Sources */,
 				E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */,
 				E0BA0D70161A4DFA00CA32D5 /* iCarousel.m in Sources */,
+				E0AB10F3161B126700FCC53C /* PerformancesViewController.m in Sources */,
+				E0AB10F7161B128900FCC53C /* PerformanceCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
