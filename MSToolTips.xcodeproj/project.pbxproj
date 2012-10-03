@@ -31,7 +31,6 @@
 		E04CD620161C599500B74BA7 /* DebuggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CD61F161C599500B74BA7 /* DebuggerViewController.m */; };
 		E04CD624161C59AD00B74BA7 /* DebuggerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CD622161C59AD00B74BA7 /* DebuggerDetailViewController.m */; };
 		E04CD625161C59AD00B74BA7 /* DebuggerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04CD623161C59AD00B74BA7 /* DebuggerDetailViewController.xib */; };
-		E04CD628161C59C000B74BA7 /* DebuggerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CD627161C59BF00B74BA7 /* DebuggerCell.m */; };
 		E0AB10F3161B126700FCC53C /* PerformancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB10F2161B126700FCC53C /* PerformancesViewController.m */; };
 		E0AB10F7161B128900FCC53C /* PerformanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB10F6161B128900FCC53C /* PerformanceCell.m */; };
 		E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */; };
@@ -82,8 +81,6 @@
 		E04CD621161C59AD00B74BA7 /* DebuggerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggerDetailViewController.h; sourceTree = "<group>"; };
 		E04CD622161C59AD00B74BA7 /* DebuggerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebuggerDetailViewController.m; sourceTree = "<group>"; };
 		E04CD623161C59AD00B74BA7 /* DebuggerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebuggerDetailViewController.xib; sourceTree = "<group>"; };
-		E04CD626161C59BF00B74BA7 /* DebuggerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggerCell.h; sourceTree = "<group>"; };
-		E04CD627161C59BF00B74BA7 /* DebuggerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebuggerCell.m; sourceTree = "<group>"; };
 		E0AB10F1161B126700FCC53C /* PerformancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformancesViewController.h; sourceTree = "<group>"; };
 		E0AB10F2161B126700FCC53C /* PerformancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformancesViewController.m; sourceTree = "<group>"; };
 		E0AB10F5161B128900FCC53C /* PerformanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceCell.h; sourceTree = "<group>"; };
@@ -269,8 +266,6 @@
 				E04CD621161C59AD00B74BA7 /* DebuggerDetailViewController.h */,
 				E04CD622161C59AD00B74BA7 /* DebuggerDetailViewController.m */,
 				E04CD623161C59AD00B74BA7 /* DebuggerDetailViewController.xib */,
-				E04CD626161C59BF00B74BA7 /* DebuggerCell.h */,
-				E04CD627161C59BF00B74BA7 /* DebuggerCell.m */,
 			);
 			name = Debugger;
 			sourceTree = "<group>";
@@ -414,7 +409,6 @@
 				E0AB10F7161B128900FCC53C /* PerformanceCell.m in Sources */,
 				E04CD620161C599500B74BA7 /* DebuggerViewController.m in Sources */,
 				E04CD624161C59AD00B74BA7 /* DebuggerDetailViewController.m in Sources */,
-				E04CD628161C59C000B74BA7 /* DebuggerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

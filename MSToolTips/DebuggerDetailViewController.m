@@ -8,11 +8,16 @@
 
 #import "DebuggerDetailViewController.h"
 
+#import "YouTubeVideo.h"
+
 @interface DebuggerDetailViewController ()
 
 @end
 
 @implementation DebuggerDetailViewController
+@synthesize titleLabel = _titleLabel;
+@synthesize captionLabel = _captionLabel;
+@synthesize video = _video;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +31,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    LBYouTubePlayerViewController *c = [[LBYouTubePlayerViewController alloc] initWithYouTubeID:_video.youtubeID];
+    c.quality = LBYouTubePlayerQualityLarge;
+    c.view.frame = CGRectMake(0.0f, 0.0f, 320.0f, 270.0f);
+    [self.view addSubview:c.view];
+}
+
+// Overriden Setter
+- (void) setVideo:(YouTubeVideo *)video
+{
+    _video = video;
+    _titleLabel.text = video.title;
+    _captionLabel.text = video.caption;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +52,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setTitleLabel:nil];
+    [self setCaptionLabel:nil];
+    [super viewDidUnload];
+}
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LBYouTubePlayerViewController.h"
+
+@class YouTubeVideo;
 
 @interface DebuggerDetailViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+
+@property (nonatomic, strong) YouTubeVideo *video;
 
 @end

@@ -11,6 +11,7 @@
 #import "LocalFileViewController.h"
 #import "WineViewController.h"
 #import "PerformancesViewController.h"
+#import "DebuggerViewController.h"
 
 @implementation AppDelegate
 @synthesize window = _window;
@@ -49,7 +50,15 @@
                                                               image:nil
                                                                 tag:3];
     navControllerPerf.tabBarItem = tabBarItem4;
-    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:youtubeVC, localVC, wineVC, navControllerPerf, nil]];
+    
+    DebuggerViewController *debug = [[DebuggerViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerDebug = [[UINavigationController alloc] initWithRootViewController:debug];
+    UITabBarItem *tabBarItem5 = [[UITabBarItem alloc] initWithTitle:@"Debug"
+                                                              image:nil
+                                                                tag:4];
+    navControllerDebug.tabBarItem = tabBarItem5;
+    
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:youtubeVC, localVC, wineVC, navControllerPerf, navControllerDebug, nil]];
     [self.window setRootViewController:self.tabBarController];
     
     [self.window makeKeyAndVisible];

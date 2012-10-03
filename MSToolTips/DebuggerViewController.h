@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YouTubeManager.h"
 
-@interface DebuggerViewController : UITableViewController
-
+@interface DebuggerViewController : UITableViewController <YouTubeManagerDelegate>
+{
+    NSMutableArray *_arrayToDisplay;
+    UIActivityIndicatorView *_activity;
+}
 @end
