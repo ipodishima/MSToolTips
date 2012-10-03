@@ -19,6 +19,15 @@
     return self;
 }
 
+- (void) displayDataForRow:(NSInteger)row
+{
+    self.textLabel.text = [NSString stringWithFormat:@"This is the row %d", row];
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"YYYY-MM-DD hh:mm"];
+    self.detailTextLabel.text = [df stringFromDate:[NSDate dateWithTimeIntervalSinceNow:row*60.0]];
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];

@@ -10,6 +10,7 @@
 #import "YouTubeViewController.h"
 #import "LocalFileViewController.h"
 #import "WineViewController.h"
+#import "PerformancesViewController.h"
 
 @implementation AppDelegate
 @synthesize window = _window;
@@ -41,7 +42,14 @@
                                                               image:nil
                                                                 tag:2];
     wineVC.tabBarItem = tabBarItem3;
-    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:youtubeVC, localVC, wineVC, nil]];
+    
+    PerformancesViewController *perf = [[PerformancesViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerPerf = [[UINavigationController alloc] initWithRootViewController:perf];
+    UITabBarItem *tabBarItem4 = [[UITabBarItem alloc] initWithTitle:@"Perf"
+                                                              image:nil
+                                                                tag:3];
+    navControllerPerf.tabBarItem = tabBarItem4;
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:youtubeVC, localVC, wineVC, navControllerPerf, nil]];
     [self.window setRootViewController:self.tabBarController];
     
     [self.window makeKeyAndVisible];

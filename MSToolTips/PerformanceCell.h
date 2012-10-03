@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PerformanceCell : UITableViewCell
-
+- (void) displayDataForRow:(NSInteger)row;
 @end
