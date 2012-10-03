@@ -28,6 +28,10 @@
 		E0438FD916009FBB009B2BA6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E0438FD616009FBB009B2BA6 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E0438FDA16009FBB009B2BA6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E0438FD716009FBB009B2BA6 /* README.md */; };
 		E0438FDC16009FE8009B2BA6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */; };
+		E04CD620161C599500B74BA7 /* DebuggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CD61F161C599500B74BA7 /* DebuggerViewController.m */; };
+		E04CD624161C59AD00B74BA7 /* DebuggerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CD622161C59AD00B74BA7 /* DebuggerDetailViewController.m */; };
+		E04CD625161C59AD00B74BA7 /* DebuggerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04CD623161C59AD00B74BA7 /* DebuggerDetailViewController.xib */; };
+		E04CD628161C59C000B74BA7 /* DebuggerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E04CD627161C59BF00B74BA7 /* DebuggerCell.m */; };
 		E0AB10F3161B126700FCC53C /* PerformancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB10F2161B126700FCC53C /* PerformancesViewController.m */; };
 		E0AB10F7161B128900FCC53C /* PerformanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB10F6161B128900FCC53C /* PerformanceCell.m */; };
 		E0BA0D68161A4ACF00CA32D5 /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA0D67161A4ACF00CA32D5 /* WineViewController.m */; };
@@ -73,6 +77,13 @@
 		E0438FD616009FBB009B2BA6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		E0438FD716009FBB009B2BA6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E0438FDB16009FE8009B2BA6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E04CD61E161C599500B74BA7 /* DebuggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggerViewController.h; sourceTree = "<group>"; };
+		E04CD61F161C599500B74BA7 /* DebuggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebuggerViewController.m; sourceTree = "<group>"; };
+		E04CD621161C59AD00B74BA7 /* DebuggerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggerDetailViewController.h; sourceTree = "<group>"; };
+		E04CD622161C59AD00B74BA7 /* DebuggerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebuggerDetailViewController.m; sourceTree = "<group>"; };
+		E04CD623161C59AD00B74BA7 /* DebuggerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebuggerDetailViewController.xib; sourceTree = "<group>"; };
+		E04CD626161C59BF00B74BA7 /* DebuggerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebuggerCell.h; sourceTree = "<group>"; };
+		E04CD627161C59BF00B74BA7 /* DebuggerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebuggerCell.m; sourceTree = "<group>"; };
 		E0AB10F1161B126700FCC53C /* PerformancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformancesViewController.h; sourceTree = "<group>"; };
 		E0AB10F2161B126700FCC53C /* PerformancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformancesViewController.m; sourceTree = "<group>"; };
 		E0AB10F5161B128900FCC53C /* PerformanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceCell.h; sourceTree = "<group>"; };
@@ -134,12 +145,9 @@
 		E0438F7916007D86009B2BA6 /* MSToolTips */ = {
 			isa = PBXGroup;
 			children = (
-				E0AB10EF161B124A00FCC53C /* Debug */,
+				E04CD629161C59C800B74BA7 /* Tab bar Items */,
 				E0438FC916009E1E009B2BA6 /* Third party */,
-				E0438FBF16009245009B2BA6 /* Local data */,
 				E0438F9D16007FAF009B2BA6 /* Download is easy */,
-				E0438F8E16007E5C009B2BA6 /* YouTube */,
-				E0BA0D64161A4AA300CA32D5 /* Wine views */,
 				E0438F8216007D86009B2BA6 /* AppDelegate.h */,
 				E0438F8316007D86009B2BA6 /* AppDelegate.m */,
 				E0438F7A16007D86009B2BA6 /* Supporting Files */,
@@ -253,9 +261,35 @@
 			path = vendor/LBYoutubeView/Submodules/JSONKit;
 			sourceTree = SOURCE_ROOT;
 		};
+		E04CD61C161C595B00B74BA7 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+				E04CD61E161C599500B74BA7 /* DebuggerViewController.h */,
+				E04CD61F161C599500B74BA7 /* DebuggerViewController.m */,
+				E04CD621161C59AD00B74BA7 /* DebuggerDetailViewController.h */,
+				E04CD622161C59AD00B74BA7 /* DebuggerDetailViewController.m */,
+				E04CD623161C59AD00B74BA7 /* DebuggerDetailViewController.xib */,
+				E04CD626161C59BF00B74BA7 /* DebuggerCell.h */,
+				E04CD627161C59BF00B74BA7 /* DebuggerCell.m */,
+			);
+			name = Debugger;
+			sourceTree = "<group>";
+		};
+		E04CD629161C59C800B74BA7 /* Tab bar Items */ = {
+			isa = PBXGroup;
+			children = (
+				E0438F8E16007E5C009B2BA6 /* YouTube */,
+				E0BA0D64161A4AA300CA32D5 /* Wine views */,
+				E0438FBF16009245009B2BA6 /* Local data */,
+				E0AB10EF161B124A00FCC53C /* Debug */,
+			);
+			name = "Tab bar Items";
+			sourceTree = "<group>";
+		};
 		E0AB10EF161B124A00FCC53C /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				E04CD61C161C595B00B74BA7 /* Debugger */,
 				E0AB10F4161B126E00FCC53C /* Performances */,
 			);
 			name = Debug;
@@ -352,6 +386,7 @@
 				E0438FDA16009FBB009B2BA6 /* README.md in Resources */,
 				E0BA0D75161A4F7B00CA32D5 /* bouteille.png in Resources */,
 				E0BA0D76161A4F7B00CA32D5 /* bouteille@2x.png in Resources */,
+				E04CD625161C59AD00B74BA7 /* DebuggerDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +412,9 @@
 				E0BA0D70161A4DFA00CA32D5 /* iCarousel.m in Sources */,
 				E0AB10F3161B126700FCC53C /* PerformancesViewController.m in Sources */,
 				E0AB10F7161B128900FCC53C /* PerformanceCell.m in Sources */,
+				E04CD620161C599500B74BA7 /* DebuggerViewController.m in Sources */,
+				E04CD624161C59AD00B74BA7 /* DebuggerDetailViewController.m in Sources */,
+				E04CD628161C59C000B74BA7 /* DebuggerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
